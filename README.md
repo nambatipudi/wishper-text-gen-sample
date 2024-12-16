@@ -51,11 +51,3 @@ To run the script with the provided launch configurations in Visual Studio Code:
 1. Open the `Run and Debug` pane.
 2. Select either "I have a dream" or "We chose the moon" configuration.
 3. Click the green play button to start debugging.
-
-## Contributing
-
-Feel free to open issues or submit pull requests if you have any improvements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License.

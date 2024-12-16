@@ -39,7 +39,7 @@ def transcribe_audio_to_text(wav_file_path):
         print(f"Failed to transcribe {wav_file_path}: {e}")
         raise
 
-def summarize_with_flan_t5(text, chunk_size=512, overlap=50):
+def summarize_with_BERTx(text, chunk_size=512, overlap=50):
     tokenizer = AutoTokenizer.from_pretrained("Alred/bart-base-finetuned-summarization-cnn-ver2")
     model = AutoModelForSeq2SeqLM.from_pretrained("Alred/bart-base-finetuned-summarization-cnn-ver2")
     
@@ -106,7 +106,7 @@ if __name__ == "__main__":
             wav_file_path = convert_to_wav(input_file_path, temp_dir)
             transcription_text = transcribe_audio_to_text(wav_file_path)
 
-            summary_text = summarize_with_flan_t5(transcription_text)
+            summary_text = summarize_with_BERTx(transcription_text)
             bullet_points = generate_bullet_points(summary_text)
             key_phrases = extract_key_phrases(summary_text)
 
