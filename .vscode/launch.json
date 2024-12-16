@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "I have a dream",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/textgen/wishper_text_gen.py",
+        "args": ["${workspaceFolder}/audio_files/MLKDream_64kb.mp3", "${workspaceFolder}/output.txt"],
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "We chose the moon",
+        "type": "debugpy",
+        "request": "launch",
+        "program": "${workspaceFolder}/textgen/wishper_text_gen.py",
+        "args": ["${workspaceFolder}/audio_files/586447main_JFKwechoosemoonspeech.mp3", "${workspaceFolder}/output.txt"],
+        "console": "integratedTerminal"
+      }
+    ]
+  }
